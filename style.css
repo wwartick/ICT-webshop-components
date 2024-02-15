@@ -1,0 +1,98 @@
+:root{
+    --primary-color: #C68484;
+    --secondary-color: #9B4444;
+    --tertiary-color: #A3C9AA;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--primary-color);
+    padding: 7em;
+}
+
+.seventy-discount-top{
+    background-color: var(--secondary-color);
+    height: 3em;
+    width: 25em;
+    padding: 2em;
+    position: relative;
+    left: 9em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#A3C9AA;
+
+    & ion-icon {
+        font-size: 2em;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        transition: background-color 250ms linear,
+                    color 500ms linear;
+
+        &:hover{
+            scale:1.1;
+            cursor: pointer;
+            color: var(--primary-color);
+            background-color: var(--tertiary-color);
+        }
+
+        &:active{
+            scale:.9;
+        }
+    }
+}
+
+.span-holder{
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+
+    & span:nth-child(1){
+        font-weight: 700;
+    }
+
+    & span:nth-child(2){
+        font-size: .85em;;
+    }
+}
+
+.woman-man-kids{
+    padding: 1.5em 2em;
+    display: flex;
+    gap:.5em;
+    background-color: var(--tertiary-color);
+    width: max-content;
+    border-radius: 10px;
+    position: relative;
+    left: 50em;
+    bottom: 6.9em;
+    color: var(--secondary-color);
+    font-weight: 800;
+
+        & span{
+            padding: 1em 2em;
+            border-radius: 10px;
+
+            &.active{
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+            }
+
+            &:hover{
+                background-color: var(--primary-color);
+                color: var(--secondary-color);
+                cursor: pointer;
+            }
+            
+    }
+}
+
+
+
