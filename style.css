@@ -12,7 +12,10 @@
 
 body{
     background-color: var(--primary-color);
-    padding: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
 }
 
 .paypal,
@@ -20,10 +23,8 @@ body{
 .seventy-discount-top{
     background-color: var(--secondary-color);
     height: 3em;
-    width: 25em;
+    min-width: max-content;
     padding: 2em;
-    position: relative;
-    left: 9em;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -50,6 +51,10 @@ body{
         }
     }
 }
+.seventy-discount-top{
+    position: relative;
+    left: 40em
+}
 
 .span-holder{
     display: flex;
@@ -73,8 +78,8 @@ body{
     width: max-content;
     border-radius: 10px;
     position: relative;
-    left: 45em;
-    bottom: 6.9em;
+    left: 42em;
+    bottom: 1em;
     color: var(--secondary-color);
     font-weight: 800;
 
@@ -102,11 +107,13 @@ body{
     justify-content: space-around;
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
-    width: 22em;
-    height: 20em;
+    min-width: max-content;
+    min-height: max-content;
     border-radius: 10px;
+    top: 15em;
+    right: 0em;
     position: relative;
-    left: 20em;
+    
 
     & .category-tab:nth-child(2){
         border-top: 2px solid var(--primary-color);
@@ -117,6 +124,7 @@ body{
 .category-tab{
     display: flex;
     align-items: center;
+    gap: 4em;
     justify-content: space-between;
     padding: 1.5em 2em;
 
@@ -152,10 +160,12 @@ body{
 }
 
 .seventy-discount-bottom{
+    position: relative;
     width: 22em;
     font-size: .95em;
-    left: 25em;
-    top: 3em;
+    top: 31em;
+    right: 45em;
+
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
 
@@ -166,10 +176,12 @@ body{
 }
 
 .paypal {
+    position: relative;
+    right: 45em;
+    top: 31em;
+
     font-size: .9em;
     gap: 1em;
-    left: 60em;
-    bottom: 5em;
 
     & ion-icon:nth-child(1) { 
         font-size: 1.75em;
@@ -180,22 +192,18 @@ body{
 }
 
 .image-holder{
-    position: absolute;
-    bottom: 22em;
-    left: 55em;
+    position: relative;
     border-radius: 15px;
     height: 20em;
     width: 20em;
+    top: 12em;
+    right: -4em;
 }
 
 img{
     border-radius: 15px;
     height: 20em;
     width: 20em;
-}
-
-.inactive{
-    display: none;
 }
 
 button{
