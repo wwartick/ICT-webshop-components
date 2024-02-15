@@ -28,28 +28,34 @@
 
     <div class="item-counter">
         <div class="category-tab">
-            <ion-icon name="basketball-outline"></ion-icon>
-            <div class="span-holder">
-                <span>Sportswear</span>
-                <span>167 items</span>
+            <div class="icon-category">
+                <ion-icon name="basketball-outline"></ion-icon>
+                <div class="span-holder">
+                    <span>Sportswear</span>
+                    <span>167 items</span>
+                </div>
             </div>
            <ion-icon name="arrow-forward-outline"></ion-icon>
         </div> 
 
         <div class="category-tab">
-            <ion-icon name="briefcase-outline"></ion-icon>
-            <div class="span-holder">
-                <span>Sportswear</span>
-                <span>167 items</span>
+            <div class="icon-category">
+                <ion-icon name="briefcase-outline"></ion-icon>
+                <div class="span-holder">
+                    <span>Accessories</span>
+                    <span>52 items</span>
+                </div>
             </div>
            <ion-icon name="arrow-forward-outline"></ion-icon>
         </div> 
 
         <div class="category-tab">
-            <ion-icon name="cafe-outline"></ion-icon>
-            <div class="span-holder">
-                <span>Sportswear</span>
-                <span>167 items</span>
+            <div class="icon-category">
+                <ion-icon name="cafe-outline"></ion-icon>
+                <div class="span-holder">
+                    <span>Kitchenware</span>
+                    <span>112 items</span>
+                </div>
             </div>
             <ion-icon name="arrow-forward-outline"></ion-icon>
         </div> 
@@ -57,7 +63,11 @@
     </div>
 
     <div class="image-holder">
-        <span>stuff</span>
+        <button id="back-btn" onclick="plusDivs(-1)"> <ion-icon name="chevron-back-outline"></ion-icon> </button>
+        <button id="forward-btn" onclick="plusDivs(+1)"> <ion-icon name="chevron-forward-outline"></ion-icon> </button>
+        <img class='products' src="https://cdn.discordapp.com/attachments/998848403373043752/1207726209891307520/domino-164_6wVEHfI-unsplash.jpg?ex=65e0b1ae&is=65ce3cae&hm=c80997bd6a898fe98e42b990c764527075fb8b9b973c9f051320029fb520ac60&" alt="running shoe">
+        <img class='products' src="https://cdn.discordapp.com/attachments/998848403373043752/1207727802120544296/maksim-larin-NOpsC3nWTzY-unsplash.jpg?ex=65e0b32a&is=65ce3e2a&hm=5c2563436eb0fc9884dc127069e637bf1d06a91b8ab1c9f5b4c75ca7c0927de9&" alt="running shoe">
+        <img class='products' src="https://cdn.discordapp.com/attachments/998848403373043752/1207727875839496283/luis-felipe-lins-LG88A2XgIXY-unsplash.jpg?ex=65e0b33c&is=65ce3e3c&hm=e52c5b501a5adef9bba5c5f5f416dec273f3a6419bdebb41143475f5c03d1b45&" alt="running shoe">
     </div>
 
     <div class="seventy-discount-bottom">
@@ -69,6 +79,7 @@
     </div>
 
     <div class="paypal">
+        <ion-icon name="logo-paypal"></ion-icon>
         <div class="span-holder">
             <span>Pay Pal</span>
             <span> Up to <b>70% discount</b> on the season end products.</span>
